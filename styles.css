@@ -166,3 +166,9 @@ button:hover {
     background-color: #eee;
     color: #111;
 }
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}

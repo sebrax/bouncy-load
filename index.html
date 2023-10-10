@@ -10,19 +10,37 @@
 <body>
     <main>
         <span class="ball"></span>
-        
+
         <form class="login">
-            <h1>Login</h1>
+            <h1>Busca Endereço</h1>
             <fieldset>
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" required placeholder="Enter your E-mail">
+                <label for="zipcode">Informe seu CEP</label>
+                <input type="text" name="zipcode" id="zipcode" required placeholder="Digite seu CEP" maxlength="8">
             </fieldset>
-            <fieldset>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required placeholder="Enter your E-mail">
-            </fieldset>
-            <button type="submit">Log in</button>
+
+            <div class="two-columns disabled">
+                <fieldset>
+                    <label for="street">Rua</label>
+                    <input type="text" name="street" id="street">
+                </fieldset>
+                <fieldset>
+                    <label for="neighborhood">Bairro</label>
+                    <input type="text" name="neighborhood" id="neighborhood">
+                </fieldset>
+                <fieldset>
+                    <label for="city">Cidade</label>
+                    <input type="text" name="city" id="city">
+                </fieldset>
+                <fieldset>
+                    <label for="state">Estado</label>
+                    <input type="text" name="state" id="state">
+                </fieldset>
+            </div>
+            
+            <button type="submit" disabled>Enviar</button>
         </form>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
